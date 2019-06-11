@@ -1,0 +1,42 @@
+.bg-primary,
+.btn-primary {
+  background-color: #ffc400 !important;
+}
+
+.btn-primary {
+  border: 0;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.form-button {
+  width: 80%;
+  border-radius: 0.5rem !important;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+
+.font-small {
+  font-size: 0.75rem;
+}
+
+.page-footer {
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+.login-form {
+  padding: 3rem 30%;
+}
+
+form > * {
+  margin: 5px;
+  border-radius: 0.5rem !important;
+  text-align: center;
+}

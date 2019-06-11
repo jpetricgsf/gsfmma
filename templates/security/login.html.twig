@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!
+{% endblock %}
+
+{% block body %}
+    {% include "inc/navbar_empty.html.twig" %}
+    <div class="container login-form">
+        <form method="post">
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            <h1 class="h3 mb-3 font-weight-normal">Por favor, inicie sesión</h1>
+            <label class="sr-only" for="inputUsername">Nombre de usuario</label>
+            <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" placeholder="Nombre de usuario" required autofocus>
+            <label class="sr-only" for="inputPassword">Contraseña</label>
+            <input class="form-control" id="inputPassword" name="password" placeholder="Contraseña" required type="password">
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+            <div>
+                <button class="btn btn-lg btn-primary text-uppercase form-button" type="submit">
+                    Iniciar Sesión
+                </button>
+            </div>
+
+        </form>
+    </div>
+    {% include "inc/footer.html.twig" %}
+{% endblock %}

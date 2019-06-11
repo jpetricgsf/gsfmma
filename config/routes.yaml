@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# redirecting the root
+root:
+  path: /
+  defaults:
+    _controller: FrameworkBundle:Redirect:urlRedirect
+    path: /login
+    permanent: true
