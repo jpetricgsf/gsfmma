@@ -40,3 +40,9 @@ form > * {
   border-radius: 0.5rem !important;
   text-align: center;
 }
+
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

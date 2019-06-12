@@ -25,7 +25,7 @@ class UserFixtures extends Fixture
             $user->setUsername('user' . $i)
                 ->setPassword($this->passwordEncoder->encodePassword(
                     $user,
-                    'the_new_password'
+                    'root'
                 ))
                 ->setRoles(['user']);
             $manager->persist($user);
