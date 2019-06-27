@@ -46,3 +46,18 @@ form > * {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.thead-light > tr > th {
+  background-color: #ffeb87 !important;
+  color: #ffc400 !important;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td,
+.table-striped > tbody > tr:nth-child(2n) > th {
+  background-color: #fdfce5;
+}
+
+.table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: #fff;
+}
