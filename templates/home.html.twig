@@ -5,6 +5,9 @@
 
 {% block body %}
     {% include "inc/navbar_home.html.twig" %}
-    {% include "home_inc/table_section.html.twig" %}
+    <div class="container col-p p-5">
+        {% include "home_inc/table_section.html.twig" %}
+        {% include "home_inc/action_section.html.twig" %}
+    </div>
     {% include "inc/footer.html.twig" %}
 {% endblock %}
